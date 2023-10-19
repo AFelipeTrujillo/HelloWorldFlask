@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome</title>
+</head>
+<body>
+  <div>
+    Welcome dear {{name}}
+  </div>
+  {%  if session_active %}
+  <div>
+      Session activated
+  </div>
+  <div>
+      <a href="{{url_for('logout')}}">Logout</a>
+  </div>
+  {% endif %}
+</body>
+</html>
